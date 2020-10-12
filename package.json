@@ -1,0 +1,40 @@
+{
+  "name": "stylelint-config-atomikui",
+  "version": "0.0.0",
+  "description": "The stylelint config for @atomikui/core",
+  "author": "Alan Eicker <alaneicker@gmail.com> (http://www.alaneicker.com)",
+  "keywords": [
+    "stylelint"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.16.2",
+    "npm": ">=6.14.4"
+  },
+  "scripts": {
+    "release:major": "npm version major -m \"Upgrade to %s\" && yarn changelog && yarn push-release",
+    "release:minor": "npm version minor -m \"Upgrade to %s\" && yarn changelog && yarn push-release",
+    "release:patch": "npm version patch -m \"Upgrade to %s\" && yarn changelog && yarn push-release",
+    "changelog": "auto-changelog --output CHANGELOG.md --template changelog.hbs && yarn changelog:commit",
+    "changelog:commit": "git commit -m \"Updates CHANGELOG.md\" CHANGELOG.md",
+    "push-release": "git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomikui/stylelint-config-atomikui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atomikui/stylelint-config-atomikui/issues"
+  },
+  "homepage": "https://github.com/atomikui/stylelint-config-atomikui#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
+  }
+}
