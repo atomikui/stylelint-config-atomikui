@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-atomikui",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "The stylelint config for @atomikui/core",
   "author": "Alan Eicker <alaneicker@gmail.com> (http://www.alaneicker.com)",
   "keywords": [
@@ -36,5 +36,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
     "stylelint-selector-bem-pattern": "^2.1.0"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.2.1"
   }
 }
